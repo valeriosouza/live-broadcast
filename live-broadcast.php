@@ -13,10 +13,6 @@
 
 load_plugin_textdomain( 'live_broad', false, dirname( plugin_basename( __FILE__ ) ) . '/lang/' );
 
-require dirname( __FILE__ ) . '/loop-live-broadcast.php';
-
-@include_once 'loop-live-broadcast.php';
-
 add_action( 'init', 'create_post_type_live_broadcast' );
 
 function create_post_type_live_broadcast() {
