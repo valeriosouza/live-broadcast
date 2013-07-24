@@ -58,3 +58,19 @@ function redirect_new_live_broadcast($location)
         }
     }
 }
+
+
+function create_shortcode_live_broadcast() {
+	
+	$args = array(  'post_type' => 'live_broadcast');
+		$loop = new WP_Query( $args );
+		while ( $loop->have_posts() ) : $loop->the_post();
+
+			$loop_live = print_r('<li>');
+				     	 the_title();
+						 print_r('</li>');
+		endwhile;
+            return $loop_live;
+}
+
+add_shortcode('live_broadcast', 'create_shortcode_live_broadcast');
