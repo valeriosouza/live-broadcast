@@ -5,7 +5,7 @@
  * Description: Plugin for streaming live for WordPress
  * Author: Valerio Souza
  * Author URI: http://valeriosouza.com.br
- * Version: 0.1.0
+ * Version: 0.1.1
  * License: GPLv2 or later
  * Text Domain: live_broad
  * Domain Path: /lang/
@@ -57,15 +57,16 @@ function redirect_new_live_broadcast($location)
 
 
 function create_shortcode_live_broadcast() {
-	
+	print_r('<div class="live-broadcast"><ul>');
 	$args = array(  'post_type' => 'live_broadcast');
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post();
 
-			$loop_live = print_r('<li>');
-				     	 the_title();
-						 print_r('</li>');
+						print_r('<li>');
+				     	the_title();
+						print_r('</li>');
 		endwhile;
+		print_r('</ul></div>');
             return $loop_live;
 }
 
