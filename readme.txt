@@ -1,10 +1,10 @@
 ﻿=== Live Broadcast ===
-Contributors: Valerio Souza
+Contributors: valeriosza, rafaelfunchal
 Donate link: 
-Tags: live, streaming, Blogging, Broadcast
+Tags: live, streaming, Blogging, Broadcast, post, posts
 Requires at least: 3.0
 Tested up to: 3.6
-Stable tag: 0.1.1
+Stable tag: 0.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,18 +14,23 @@ Easy streaming live for WordPress
 
 This Plugin for streaming live in Text for WordPress
 
-= Descrição =
+== Descrição ==
 
 Este Plugin permite fazer uma transmissão ao-vivo no seu WordPress
 
 == Installation ==
 
-* Use the shortcode [live_broadcast] in your posts and pages. To enter directly in programming, use 'echo do_shortcode('[live_broadcast]'); '
+1. Upload the `LiveBroadcast` directory to the `/wp-content/plugins/` directory
+1. Activate the plugin through the 'Plugins' menu in WordPress
+1. Use the shortcode [live_broadcast] in your posts and pages. To enter directly in programming, use 'echo do_shortcode('[live_broadcast]'); '
+1. Start posting content through the menu Live Broadcast
 
-= Instalação: =
 
-Para usar basta usar o Shortcode [live_broadcast] em seus posts ou páginas. Para inserir diretamente na programação, use o código 'echo do_shortcode('[live_broadcast]'); '
-		
+== Instalação ==
+1. Faça o upload do `LiveBroadcast` para a pasta `/wp-content/plugins/`
+1. Ative o plugin atravês da opção Plugins do Menu do seu WordPress
+1. Para usar basta usar o Shortcode [live_broadcast] em seus posts ou páginas. Para inserir diretamente na programação, use o código 'echo do_shortcode('[live_broadcast]'); '
+1. Comece a postagem de contéudo atravês da opção Transmissão Ao-Vivo do seu WordPress.
 
 
 = Contribute =
@@ -34,11 +39,9 @@ Use https://github.com/valeriosouza/live-broadcast for contribute
 
 = Colaborar =
 
-para colaborar, use o https://github.com/valeriosouza/live-broadcast .
+Para colaborar, use o https://github.com/valeriosouza/live-broadcast .
 
-= Dúvidas? =
 
-em breve
 
 == Frequently Asked Questions ==
 
@@ -48,11 +51,17 @@ Use in your code / Use no seu código
 
 		'if (function_exists('create_shortcode_live_broadcast')){
 			echo do_shortcode('[live_broadcast]'); '
-		
 
+= There is a force to change the ordering of posts? / Existe uma força de mudar a ordenação de posts? =
+
+Just implement the options in the shortcode as below. / Basta implementar as opções no shortcode como abaixo.
+	
+		'[live_broadcast orderby="title" order="ASC"]'
+	
+	
 == Upgrade Notice ==
 
-Quick news update and use of CSS
+Options for order and languagem pt-BR
 
 
 == Screenshots ==
@@ -60,6 +69,12 @@ Quick news update and use of CSS
 1. Post screen live / Tela de postagem 
 
 == Changelog ==
+
+= 0.1.2 - 25/07/2013 =
+
+* Inclusion of ordering option Posts and Translation for pt-BR
+* Fixed issue when post was saved
+* Fix the problem of locating the shortcode
 
 = 0.1.1 - 24/07/2013 =
 

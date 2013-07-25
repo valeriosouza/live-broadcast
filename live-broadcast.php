@@ -3,9 +3,9 @@
  * Plugin Name: Live Broadcast
  * Plugin URI: http://wordpress.org/plugins/live-broadcast
  * Description: Plugin for streaming live for WordPress
- * Author: Valerio Souza
+ * Author: Valerio Souza E Rafael Funchal
  * Author URI: http://valeriosouza.com.br
- * Version: 0.1.1
+ * Version: 0.1.2
  * License: GPLv2 or later
  * Text Domain: live_broad
  * Domain Path: /lang/
