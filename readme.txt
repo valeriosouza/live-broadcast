@@ -14,7 +14,7 @@ Easy streaming live for WordPress
 
 This Plugin for streaming live in Text for WordPress
 
-== Descrição ==
+= Descrição =
 
 Este Plugin permite fazer uma transmissão ao-vivo no seu WordPress
 
@@ -26,7 +26,7 @@ Este Plugin permite fazer uma transmissão ao-vivo no seu WordPress
 1. Start posting content through the menu Live Broadcast
 
 
-== Instalação ==
+= Instalação =
 1. Faça o upload do `LiveBroadcast` para a pasta `/wp-content/plugins/`
 1. Ative o plugin atravês da opção Plugins do Menu do seu WordPress
 1. Para usar basta usar o Shortcode [live_broadcast] em seus posts ou páginas. Para inserir diretamente na programação, use o código 'echo do_shortcode('[live_broadcast]'); '
